@@ -1,4 +1,4 @@
-package com.shayelbaz.googlesheetsapiOD.newarchitecture;
+package com.shayelbaz.googlesheetsapi.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.shayelbaz.googlesheetsapiOD.BuildConfig;
-import com.shayelbaz.googlesheetsapiOD.newarchitecture.components.MainComponentsRegistry;
-import com.shayelbaz.googlesheetsapiOD.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.shayelbaz.googlesheetsapi.BuildConfig;
+import com.shayelbaz.googlesheetsapi.newarchitecture.components.MainComponentsRegistry;
+import com.shayelbaz.googlesheetsapi.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

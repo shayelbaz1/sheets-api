@@ -1,4 +1,4 @@
-package com.shayelbaz.googlesheetsapiOD;
+package com.shayelbaz.googlesheetsapi;
 
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;
