@@ -1,4 +1,4 @@
-package com.myorg.newproject.newarchitecture.components;
+package com.shayelbaz.googlesheetsapi.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;

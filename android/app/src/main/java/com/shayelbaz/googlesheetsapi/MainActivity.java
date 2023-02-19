@@ -1,4 +1,4 @@
-package com.myorg.newproject;
+package com.shayelbaz.googlesheetsapi;
 
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;
@@ -14,7 +14,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "My New Project Name";
+    return "Google Sheets API";
   }
 
   @Override
