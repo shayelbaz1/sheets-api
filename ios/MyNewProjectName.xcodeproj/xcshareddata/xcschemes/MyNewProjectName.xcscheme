@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "TypescriptReactNativeStarter.app"
+               BuildableName = "MyNewProjectName.app"
                BlueprintName = "Google Sheets API"
-               ReferencedContainer = "container:TypescriptReactNativeStarter.xcodeproj">
+               ReferencedContainer = "container:MyNewProjectName.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "TypescriptReactNativeStarterTests.xctest"
-               BlueprintName = "TypescriptReactNativeStarterTests"
-               ReferencedContainer = "container:TypescriptReactNativeStarter.xcodeproj">
+               BuildableName = "MyNewProjectNameTests.xctest"
+               BlueprintName = "MyNewProjectNameTests"
+               ReferencedContainer = "container:MyNewProjectName.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "TypescriptReactNativeStarter.app"
+            BuildableName = "MyNewProjectName.app"
             BlueprintName = "Google Sheets API"
-            ReferencedContainer = "container:TypescriptReactNativeStarter.xcodeproj">
+            ReferencedContainer = "container:MyNewProjectName.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "TypescriptReactNativeStarter.app"
+            BuildableName = "MyNewProjectName.app"
             BlueprintName = "Google Sheets API"
-            ReferencedContainer = "container:TypescriptReactNativeStarter.xcodeproj">
+            ReferencedContainer = "container:MyNewProjectName.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
