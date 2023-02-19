@@ -23,26 +23,26 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = "GoogleSheetsAPI";
+			remoteInfo = GoogleSheetsAPI;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* GoogleSheetsAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GoogleSheetsAPITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* GoogleSheetsAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleSheetsAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* GoogleSheetsAPITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GoogleSheetsAPITests.m"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* GoogleSheetsAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoogleSheetsAPI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "GoogleSheetsAPI/AppDelegate.h"; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = "GoogleSheetsAPI/AppDelegate.mm"; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "GoogleSheetsAPI/Images.xcassets"; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "GoogleSheetsAPI/Info.plist"; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "GoogleSheetsAPI/main.m"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* GoogleSheetsAPITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleSheetsAPITests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* GoogleSheetsAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleSheetsAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = GoogleSheetsAPI/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = GoogleSheetsAPI/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GoogleSheetsAPI/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GoogleSheetsAPI/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = GoogleSheetsAPI/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-GoogleSheetsAPI-GoogleSheetsAPITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleSheetsAPI-GoogleSheetsAPITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-GoogleSheetsAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleSheetsAPI.debug.xcconfig"; path = "Target Support Files/Pods-GoogleSheetsAPI/Pods-GoogleSheetsAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-GoogleSheetsAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleSheetsAPI.release.xcconfig"; path = "Target Support Files/Pods-GoogleSheetsAPI/Pods-GoogleSheetsAPI.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-GoogleSheetsAPI-GoogleSheetsAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleSheetsAPI-GoogleSheetsAPITests.debug.xcconfig"; path = "Target Support Files/Pods-GoogleSheetsAPI-GoogleSheetsAPITests/Pods-GoogleSheetsAPI-GoogleSheetsAPITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-GoogleSheetsAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoogleSheetsAPI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "GoogleSheetsAPI/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = GoogleSheetsAPI/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-GoogleSheetsAPI-GoogleSheetsAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoogleSheetsAPI-GoogleSheetsAPITests.release.xcconfig"; path = "Target Support Files/Pods-GoogleSheetsAPI-GoogleSheetsAPITests/Pods-GoogleSheetsAPI-GoogleSheetsAPITests.release.xcconfig"; sourceTree = "<group>"; };
 		8ED781B9286FA814001428CF /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = GoogleSheetsAPI/BootSplash.storyboard; sourceTree = "<group>"; };
 		8ED781BC286FADD0001428CF /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 				00E356F21AD99517003FC87E /* GoogleSheetsAPITests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = "GoogleSheetsAPITests";
+			path = GoogleSheetsAPITests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -113,7 +113,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = "GoogleSheetsAPI";
+			name = GoogleSheetsAPI;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -211,14 +211,13 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = "GoogleSheetsAPITests";
-			productname = "GoogleSheetsAPITests";
+			name = GoogleSheetsAPITests;
 			productReference = 00E356EE1AD99517003FC87E /* GoogleSheetsAPITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* Google Sheets API */ = {
+		13B07F861A680F5B00A75B9A /* GoogleSheetsAPI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Google Sheets API" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "GoogleSheetsAPI" */;
 			buildPhases = (
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -233,8 +232,8 @@
 			);
 			dependencies = (
 			);
-			name = "GoogleSheetsAPI";
-			productName = "GoogleSheetsAPI";
+			name = GoogleSheetsAPI;
+			productName = GoogleSheetsAPI;
 			productReference = 13B07F961A680F5B00A75B9A /* GoogleSheetsAPI.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -268,7 +267,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* Google Sheets API */,
+				13B07F861A680F5B00A75B9A /* GoogleSheetsAPI */,
 				00E356ED1AD99517003FC87E /* GoogleSheetsAPITests */,
 			);
 		};
@@ -467,7 +466,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* Google Sheets API */;
+			target = 13B07F861A680F5B00A75B9A /* GoogleSheetsAPI */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -482,7 +481,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "GoogleSheetsAPITests/Info.plist";
+				INFOPLIST_FILE = GoogleSheetsAPITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -494,7 +493,7 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shayelbaz.googlesheetsapiOD";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shayelbaz.googlesheetsapiOD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogleSheetsAPI.app/GoogleSheetsAPI";
 			};
@@ -506,7 +505,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = "GoogleSheetsAPITests/Info.plist";
+				INFOPLIST_FILE = GoogleSheetsAPITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -518,7 +517,7 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shayelbaz.googlesheetsapiOD";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shayelbaz.googlesheetsapiOD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogleSheetsAPI.app/GoogleSheetsAPI";
 			};
@@ -533,8 +532,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = "GoogleSheetsAPI/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "GoogleSheetsAPI";
+				INFOPLIST_FILE = GoogleSheetsAPI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GoogleSheetsAPI;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -546,8 +545,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shayelbaz.googlesheetsapiOD";
-				PRODUCT_NAME = "GoogleSheetsAPI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shayelbaz.googlesheetsapiOD;
+				PRODUCT_NAME = GoogleSheetsAPI;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -562,8 +561,8 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = "GoogleSheetsAPI/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "GoogleSheetsAPI";
+				INFOPLIST_FILE = GoogleSheetsAPI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GoogleSheetsAPI;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -575,8 +574,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shayelbaz.googlesheetsapiOD";
-				PRODUCT_NAME = "GoogleSheetsAPI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shayelbaz.googlesheetsapiOD;
+				PRODUCT_NAME = GoogleSheetsAPI;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -731,7 +730,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Google Sheets API" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "GoogleSheetsAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
