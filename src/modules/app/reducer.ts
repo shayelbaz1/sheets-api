@@ -1,18 +1,26 @@
 'use strict';
-import {ThemeType} from 'src/theme';
-import {AppAction} from 'src/types/actions';
-import {createReducer} from 'typesafe-actions';
-import {setAppTheme} from './actions';
+import { ThemeType } from 'src/theme';
+import { AppAction } from 'src/types/actions';
+import { createReducer } from 'typesafe-actions';
+import { setAppTheme, setAppData, setAppFecthInterval } from './actions';
+import {Picker} from '@react-native-picker/picker';
 
 export interface AppState {
   theme: ThemeType;
+  data: any,
+  fetchIntervel: { title: string, delay: number },
 }
 
 const initialState: AppState = {
   theme: 'light',
+  data: null,
+  fetchIntervel: {
+    title: '1D',
+    delay: 1000 * 60 * 60 * 24
+  }
 };
 
-export const appReducer = createReducer<AppState, AppAction>(initialState).handleAction(
-  setAppTheme,
-  (state, {payload: theme}) => ({...state, theme}),
-);
+export const appReducer = createReducer<AppState, AppAction>(initialState)
+  .handleAction(setAppTheme, (state, { payload: theme }) => ({ ...state, theme }))
+  .handleAction(setAppData, (state, { payload: data }) => ({ ...state, data }))
+  .handleAction(setAppFecthInterval, (state, { payload: fetchIntervel }) => ({ ...state, fetchIntervel }));

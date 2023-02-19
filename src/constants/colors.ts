@@ -1,4 +1,5 @@
 export const Colors = {
+  white: '#ffffffce',
   white: '#ffffff',
   offwhite: '#f4f5f6',
   alphaGray: '#eff0ef',
@@ -16,4 +17,6 @@ export const Colors = {
   turquoise: '#25F2C7',
   dangerRed: '#ff453a',
   carminePink: '#eb484c',
+  darkBlue: '#000562',
+  blue: '#2997ff'
 };
