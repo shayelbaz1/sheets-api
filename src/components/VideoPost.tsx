@@ -2,19 +2,20 @@ import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, ImageBackground, Alert } from 'react-native';
 import Icon from 'react-native-easy-icon';
 import styled from 'styled-components';
-const _videoData = {
-    "id": "1",
-    "title": "Phir Milenge",
-    "youtube_link": "https://www.youtube.com/watch?v=S5FyS7tQuUw",
-    "thumbnail_url": "https://i.ytimg.com/vi/S5FyS7tQuUw/maxresdefault.jpg",
-    "description": "Till we meet again.",
-    "artist": "Faisal Kapadia x Young Stunners",
-    "season": "14",
+
+export interface VideoData {
+    id: "1",
+    title: "Title",
+    youtube_link: "https://www.youtube.com/watch?v=S5FyS7tQuUw",
+    thumbnail_url: "https://i.ytimg.com/vi/S5FyS7tQuUw/maxresdefault.jpg",
+    description: "Till we meet again.",
+    artist: "Faisal Kapadia x Young Stunners",
+    level: "1",
 }
 
-function VideoPost({ videoData = _videoData }) {
+function VideoPost(props: { videoData: VideoData }) {
+    const { videoData } = props
     return (
-
         <View style={{ paddingVertical: 10 }}>
             <TouchableOpacity onPress={() => { Alert.alert("Video Selected: ", videoData.title) }}>
                 <ImageBackground style={styles.thumbImage} imageStyle={{ borderRadius: 16, }} source={{ uri: videoData.thumbnail_url }} >
