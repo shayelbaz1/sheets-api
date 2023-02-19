@@ -39,7 +39,7 @@ const HomePageComponent = (): JSX.Element => {
   return (
     <Container>
       <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-        <Title>Section Title 1</Title>
+        <Title>Shay Piano Guides</Title>
         <Icon onPress={() => onRefresh()} type="material" name="refresh" size={30} color={theme.colors.blue} />
       </View>
       <ScrollView refreshControl={

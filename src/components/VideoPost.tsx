@@ -15,8 +15,8 @@ const _videoData = {
 function VideoPost({ videoData = _videoData }) {
     return (
 
-        <View style={{paddingVertical: 10}}>
-            <TouchableOpacity onPress={() => { () => Alert.alert("Video Selected: ", videoData.title) }}>
+        <View style={{ paddingVertical: 10 }}>
+            <TouchableOpacity onPress={() => { Alert.alert("Video Selected: ", videoData.title) }}>
                 <ImageBackground style={styles.thumbImage} imageStyle={{ borderRadius: 16, }} source={{ uri: videoData.thumbnail_url }} >
                     <Icon type="font-awesome5" name="play-circle" size={50} color={'#ffffffc0'} />
                 </ImageBackground>
