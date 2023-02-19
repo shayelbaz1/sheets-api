@@ -1,4 +1,4 @@
-package com.shayelbaz.googlesheetsapi.newarchitecture.modules;
+package com.shayelbaz.googlesheetsapiOD.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;

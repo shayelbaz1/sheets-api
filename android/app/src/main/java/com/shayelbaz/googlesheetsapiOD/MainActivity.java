@@ -1,4 +1,4 @@
-package com.shayelbaz.googlesheetsapi;
+package com.shayelbaz.googlesheetsapiOD;
 
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;
@@ -14,7 +14,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "Google Sheets API";
+    return "GoogleSheetsAPI";
   }
 
   @Override
