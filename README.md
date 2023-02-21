@@ -1,13 +1,7 @@
 
 <div align="center"><h1>Google Sheets API App</h1></div>
 
-
-
-https://user-images.githubusercontent.com/24244828/220055403-3e9d8fd4-a9a1-4f3f-b9b0-bf1b7254a717.mp4
-
-https://user-images.githubusercontent.com/24244828/220054400-af1943d9-14be-4459-bed6-5a2ad28000f7.mov
-
-
+https://user-images.githubusercontent.com/24244828/220245633-3cedd598-1d44-4e1d-ace8-f59929d186d9.mp4
 
 <div align="center"><h1>Typescript React Native Starter</h1></div>
 <br/>
