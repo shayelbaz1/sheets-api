@@ -7,7 +7,7 @@ import { store } from "src/store";
 function formatResponse(response: AnyAction) {
   const keys = response.values[0];
   const data = response.values.slice(1);
-  const obj = data.map(arr => Object.assign({}, ...keys.map((k, i) => ({ [k]: arr[i] }))));
+  const obj = data.map((arr: any) => Object.assign({}, ...keys.map((k, i) => ({ [k]: arr[i] }))));
   store.dispatch(setAppData(obj as any));
 }
 

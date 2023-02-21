@@ -3,7 +3,6 @@ import { ThemeType } from 'src/theme';
 import { AppAction } from 'src/types/actions';
 import { createReducer } from 'typesafe-actions';
 import { setAppTheme, setAppData, setAppFecthInterval } from './actions';
-import {Picker} from '@react-native-picker/picker';
 
 export interface AppState {
   theme: ThemeType;

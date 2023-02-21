@@ -23,7 +23,6 @@ const HomePageComponent = (): JSX.Element => {
   }, [])
 
   useInterval(async () => {
-    console.log("\x1b[33m  file: Home.tsx:30  useInterval  useInterval")
     await getData()
   }, delay)
 

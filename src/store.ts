@@ -51,7 +51,7 @@ export type AppDispatch = typeof store.dispatch;
 // sagaMiddleware.run(sagas);
 
 export const persistor = persistStore(store);
-persistor.purge()
+// persistor.purge()
 /*
  *--------------------------------------------------*
  * Reset persist store: persistor.purge()
