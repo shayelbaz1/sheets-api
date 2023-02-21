@@ -75,8 +75,7 @@ const HomePageComponent = (): JSX.Element => {
 const Container = styled(View)`
   flex: 1;
   background-color: ${(props) => props.theme.colors.background};
-  margin-right: 15px;
-  margin-left: 15px;
+  padding: 0px 15px;
 `;
 
 const TitleContainer = styled(View)`
