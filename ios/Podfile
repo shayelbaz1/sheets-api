@@ -1,12 +1,16 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
-
 platform :ios, '12.4'
 install! 'cocoapods', :deterministic_uuids => false
 
 target 'GoogleSheetsAPI' do
   config = use_native_modules!
 
+  # Beginning with firebase-ios-sdk v9+ (react-native-firebase v15+) you must tell CocoaPods to use frameworks.
+  use_frameworks! :linkage => :static
+  # right after `use_frameworks! :linkage => :static`
+  $RNFirebaseAsStaticFramework = true
+  
   # Flags change depending on the env values.
   flags = get_default_flags()
 
@@ -28,7 +32,7 @@ target 'GoogleSheetsAPI' do
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable the next line.
-  use_flipper!()
+  # use_flipper!()
 
   post_install do |installer|
     react_native_post_install(installer)
