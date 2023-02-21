@@ -3,10 +3,11 @@ import { CompositeNavigationProp, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Button, Image, Text, View } from 'react-native';
+import { Image, Text, View } from 'react-native';
 import Icon from 'react-native-easy-icon';
 import { AppStackParamList } from 'src/navigators/AppStack';
 import { HomePage } from 'src/pages/Home';
+import { Pie } from 'src/pages/Pie';
 import { SettingsPage } from 'src/pages/Settings';
 import { useTheme } from 'styled-components';
 
@@ -14,6 +15,7 @@ const { Navigator, Screen } = createBottomTabNavigator<MainBottomTabParamList>()
 
 export type MainBottomTabParamList = {
   home: undefined;
+  pie: undefined;
   settings: undefined;
 };
 
@@ -44,19 +46,6 @@ export function LogoTitle() {
   );
 }
 
-export function HeaderRight() {
-  return (
-    <View style={{ marginRight: 15 }}>
-
-      <Button
-        onPress={() => alert('This is a button!')}
-        title="Info"
-        color="#00cc00"
-      />
-    </View>
-  );
-}
-
 export const MainBottomTab = () => {
   const { t } = useTranslation();
   const theme = useTheme();
@@ -83,10 +72,27 @@ export const MainBottomTab = () => {
         }}
       />
       <Screen
+        name="pie"
+        component={Pie}
+        options={{
+          headerShown: true,
+          headerTitle: t('Pie'),
+          headerTintColor: theme.colors.text,
+          headerStyle: { backgroundColor: theme.colors.background},
+          tabBarLabel: t('Pie'),
+          tabBarIcon: ({ color, size }) => (
+            <Icon type="feather" name="pie-chart" size={size} color={color} />
+          ),
+        }}
+      />
+      <Screen
         name="settings"
         component={SettingsPage}
         options={{
-          headerShown: false,
+          headerShown: true,
+          headerTitle: t('Settings'),
+          headerTintColor: theme.colors.text,
+          headerStyle: { backgroundColor: theme.colors.background},
           tabBarLabel: t('settings'),
           tabBarIcon: ({ color, size }) => (
             <Icon type="antdesign" name="setting" size={size} color={color} />

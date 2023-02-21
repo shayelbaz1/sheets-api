@@ -1,19 +1,10 @@
 import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, ImageBackground, Alert } from 'react-native';
 import Icon from 'react-native-easy-icon';
+import { DataRow } from 'src/types/dataRow';
 import styled from 'styled-components';
 
-export interface VideoData {
-    id: "1",
-    title: "Title",
-    youtube_link: "https://www.youtube.com/watch?v=S5FyS7tQuUw",
-    thumbnail_url: "https://i.ytimg.com/vi/S5FyS7tQuUw/maxresdefault.jpg",
-    description: "Till we meet again.",
-    artist: "Faisal Kapadia x Young Stunners",
-    level: "1",
-}
-
-function VideoPost(props: { videoData: VideoData }) {
+function VideoPost(props: { videoData: DataRow }) {
     const { videoData } = props
     return (
         <View style={{ paddingVertical: 10 }}>
