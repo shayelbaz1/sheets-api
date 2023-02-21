@@ -1,6 +1,6 @@
 import React, { memo, useCallback, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { View, Text, ScrollView, RefreshControl, ActivityIndicator } from 'react-native';
+import { View, Text, ScrollView, RefreshControl, ActivityIndicator, Button, StyleSheet } from 'react-native';
 import { useSelector } from 'react-redux';
 import VideoPost from 'src/components/VideoPost';
 import { dataSelector, fetchIntervelSelector } from 'src/modules/app/selectors';
@@ -10,6 +10,7 @@ import { useTheme } from 'styled-components';
 import Icon from 'react-native-easy-icon';
 import { useInterval } from '../hooks/useInterval'
 import { DataRow } from 'src/types/dataRow';
+import Swiper from 'react-native-deck-swiper';
 
 const HomePageComponent = (): JSX.Element => {
   const { t } = useTranslation();
@@ -48,6 +49,24 @@ const HomePageComponent = (): JSX.Element => {
           refreshing={refreshing}
           onRefresh={onRefresh} />}>
         {dataFetched && dataFetched.map((item: DataRow) => <VideoPost key={"0" + item.id} videoData={item} />)}
+        <View style={styles.container}>
+          <Swiper
+            cards={['DO', 'MORE', 'OF', 'WHAT', 'MAKES', 'YOU', 'HAPPY']}
+            renderCard={(card) => {
+              return (
+                <View style={styles.card}>
+                  <Text style={styles.text}>{card}</Text>
+                </View>
+              )
+            }}
+            cardStyle={{ top: 50, left: 25, right: 0, bottom: 0, alijusgnItems: 'center' }}
+            onSwiped={(cardIndex) => { console.log(cardIndex) }}
+            onSwipedAll={() => { console.log('onSwipedAll') }}
+            cardIndex={0}
+            backgroundColor='none'
+            stackSize={3}>
+          </Swiper>
+        </View>
       </ScrollView>
     </Container >
   );
@@ -56,7 +75,8 @@ const HomePageComponent = (): JSX.Element => {
 const Container = styled(View)`
   flex: 1;
   background-color: ${(props) => props.theme.colors.background};
-  padding: 0px 15px;
+  margin-right: 15px;
+  margin-left: 15px;
 `;
 
 const TitleContainer = styled(View)`
@@ -71,5 +91,28 @@ const Title = styled(Text)`
   color: ${(props) => props.theme.colors.text};
   margin-top: 10px;
 `;
+
+const styles = StyleSheet.create({
+  container: {
+    // flex: 1,
+    // backgroundColor: "#F5FCFF"
+    height: 500
+  },
+  card: {
+    // flex: 1,
+    height: 400,
+    width: '90%',
+    borderRadius: 4,
+    borderWidth: 2,
+    borderColor: "#E8E8E8",
+    justifyContent: "center",
+    backgroundColor: "white"
+  },
+  text: {
+    textAlign: "center",
+    fontSize: 50,
+    backgroundColor: "transparent"
+  }
+});
 
 export const HomePage = memo(HomePageComponent);
