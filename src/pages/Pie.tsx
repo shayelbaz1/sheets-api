@@ -8,6 +8,7 @@ import styled from 'styled-components';
 const sliceColor = ['#B9F3E4', '#FFB84C', '#F16767', '#A459D1']
 
 function formatLevels(dataFetched: any) {
+    if(!dataFetched) return []
     const levelsArray = dataFetched.map((i: DataRow) => +i.level) // [0,0,1,1]
     const levels = levelsArray.reduce((acc: any, level: number) => {
         acc[level] = (acc[level] || 0) + 1;
@@ -40,8 +41,8 @@ const PieComponent = (): JSX.Element => {
                     />
                 </PieContainer>
                 <List>
-                    {levels.map((i) =>
-                        <Row>
+                    {levels.map((i, idx) =>
+                        <Row key={idx}>
                             <Square style={{ backgroundColor: sliceColor[i.level % sliceColor.length] }} />
                             <Desc>{`Level ${i.level}\nAmount ${i.amount}`}</Desc>
                         </Row>

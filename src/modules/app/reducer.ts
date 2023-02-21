@@ -12,7 +12,7 @@ export interface AppState {
 }
 
 const initialState: AppState = {
-  theme: 'light',
+  theme: 'dark',
   data: null,
   fetchIntervel: {
     title: '1D',

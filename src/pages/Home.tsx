@@ -43,7 +43,7 @@ const HomePageComponent = (): JSX.Element => {
       </TitleContainer>
       <ScrollView refreshControl={
         <RefreshControl
-          title="Pull to refresh"
+          title={t('Pull to refresh')}
           titleColor={theme.colors.text}
           tintColor={theme.colors.text}
           refreshing={refreshing}

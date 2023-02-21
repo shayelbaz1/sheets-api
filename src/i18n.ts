@@ -8,6 +8,13 @@ export const resources = {
     translation: {
       home: 'Home',
       settings: 'Settings',
+      light: 'Light',
+      dark: 'Dark',
+      system: 'System',
+      pie: 'Pie',
+      'Pull to refresh': 'Pull to refress',
+      'refresh in': 'Refresh in',
+      close: 'Close'
     },
   },
   fr: {

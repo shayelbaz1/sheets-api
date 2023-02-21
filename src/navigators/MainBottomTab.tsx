@@ -76,10 +76,10 @@ export const MainBottomTab = () => {
         component={Pie}
         options={{
           headerShown: true,
-          headerTitle: t('Pie'),
+          headerTitle: t('pie'),
           headerTintColor: theme.colors.text,
           headerStyle: { backgroundColor: theme.colors.background},
-          tabBarLabel: t('Pie'),
+          tabBarLabel: t('pie'),
           tabBarIcon: ({ color, size }) => (
             <Icon type="feather" name="pie-chart" size={size} color={color} />
           ),
@@ -90,7 +90,7 @@ export const MainBottomTab = () => {
         component={SettingsPage}
         options={{
           headerShown: true,
-          headerTitle: t('Settings'),
+          headerTitle: t('settings'),
           headerTintColor: theme.colors.text,
           headerStyle: { backgroundColor: theme.colors.background},
           tabBarLabel: t('settings'),

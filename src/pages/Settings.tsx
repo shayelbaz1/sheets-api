@@ -31,10 +31,10 @@ const SettingsPageComponent = (): JSX.Element => {
         payload = { title: '1m', delay: 1000 * 60 }
         break
       case "10s":
-        payload = { title: '10s', delay: 1000 * 10  }
+        payload = { title: '10s', delay: 1000 * 10 }
         break
       case "5s":
-        payload = { title: '5s', delay: 1000 * 5  }
+        payload = { title: '5s', delay: 1000 * 5 }
         break
     }
     dispatch(setAppFecthInterval(payload))
@@ -42,12 +42,11 @@ const SettingsPageComponent = (): JSX.Element => {
 
   return (
     <Container>
-      <Title>{t('settings')}</Title>
       {Object.keys(Themes).map((themeType) => {
         return (
           <Button
             key={themeType}
-            title={themeType}
+            title={t(themeType)}
             onPress={() => {
               dispatch(setAppTheme(themeType as ThemeType));
             }}
@@ -55,28 +54,29 @@ const SettingsPageComponent = (): JSX.Element => {
         );
       })}
       <Button
-        title={`Refresh in ${fetchIntervel.title}`}
+        title={`${t('refresh in')} ${fetchIntervel.title}`}
         onPress={() => { setShowPicker(!showPicker) }}
       />
-      {showPicker && <View style={{ width: '100%', position: 'absolute', bottom: 0 }}>
-        <View style={{ display: 'flex', alignItems: 'flex-start', marginLeft: 15 }}>
-          <Button
-            title={`Close`}
-            onPress={() => { setShowPicker(false) }}
-          />
-        </View>
-        <Picker
-          mode="dropdown" // Android only
-          selectedValue={fetchIntervel.title}
-          onValueChange={onValueChange}>
-          <Picker.Item color={theme.colors.text} label="1 Day" value={'1D'} />
-          <Picker.Item color={theme.colors.text} label="10 Minutes" value={'10m'} />
-          <Picker.Item color={theme.colors.text} label="5 Minutes" value={'5m'} />
-          <Picker.Item color={theme.colors.text} label="1 Minute" value={'1m'} />
-          <Picker.Item color={theme.colors.text} label="10 Seconds" value={'10s'} />
-          <Picker.Item color={theme.colors.text} label="5 Seconds" value={'5s'} />
-        </Picker>
-      </View>}
+      {showPicker &&
+        <PickerContainer>
+          <CloseContainer>
+            <Button
+              title={t('close')}
+              onPress={() => { setShowPicker(false) }}
+            />
+          </CloseContainer>
+          <Picker
+            mode="dropdown" // Android only
+            selectedValue={fetchIntervel.title}
+            onValueChange={onValueChange}>
+            <Picker.Item color={theme.colors.text} label={t('1 Day')} value={'1D'} />
+            <Picker.Item color={theme.colors.text} label={t('10 Minutes')} value={'10m'} />
+            <Picker.Item color={theme.colors.text} label={t('5 Minutes')} value={'5m'} />
+            <Picker.Item color={theme.colors.text} label={t('1 Minute')} value={'1m'} />
+            <Picker.Item color={theme.colors.text} label={t('10 Seconds')} value={'10s'} />
+            <Picker.Item color={theme.colors.text} label={t('5 Seconds')} value={'5s'} />
+          </Picker>
+        </PickerContainer>}
     </Container>
   );
 };
@@ -86,6 +86,18 @@ const Container = styled(View)`
   align-items: center;
   justify-content: center;
   background-color: ${(props) => props.theme.colors.background};
+`;
+
+const PickerContainer = styled(View)`
+  width: 100%;
+  position: absolute;
+  bottom: 0
+`;
+
+const CloseContainer = styled(View)`
+  display: flex;
+  align-items: flex-start;
+  margin-left: 15px;
 `;
 
 const Title = styled(Text)`
