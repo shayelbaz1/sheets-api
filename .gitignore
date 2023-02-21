@@ -92,3 +92,6 @@ screenshots
 /src/constants/environment/index.ts
 
 /builds
+
+# User
+.env
