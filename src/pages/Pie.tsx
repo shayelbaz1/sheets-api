@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ScrollView, Text, View } from 'react-native';
 import PieChart from 'react-native-pie-chart';
 import { useSelector } from 'react-redux';
@@ -8,7 +9,7 @@ import styled from 'styled-components';
 const sliceColor = ['#B9F3E4', '#FFB84C', '#F16767', '#A459D1']
 
 function formatLevels(dataFetched: any) {
-    if(!dataFetched) return []
+    if (!dataFetched) return []
     const levelsArray = dataFetched.map((i: DataRow) => +i.level) // [0,0,1,1]
     const levels = levelsArray.reduce((acc: any, level: number) => {
         acc[level] = (acc[level] || 0) + 1;
@@ -21,7 +22,7 @@ function formatLevels(dataFetched: any) {
 }
 
 const PieComponent = (): JSX.Element => {
-
+    const { t } = useTranslation()
     const dataFetched = useSelector(dataSelector);
     const levels = formatLevels(dataFetched)
     const series: number[] = levels.map((i) => i.amount) as number[]
@@ -44,7 +45,7 @@ const PieComponent = (): JSX.Element => {
                     {levels.map((i, idx) =>
                         <Row key={idx}>
                             <Square style={{ backgroundColor: sliceColor[i.level % sliceColor.length] }} />
-                            <Desc>{`Level ${i.level}\nAmount ${i.amount}`}</Desc>
+                            <Desc>{`${t('level')} ${i.level}\n${t('amount')} ${i.amount}`}</Desc>
                         </Row>
                     )}
                 </List>

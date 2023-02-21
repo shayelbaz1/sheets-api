@@ -9,7 +9,7 @@ import { Picker } from '@react-native-picker/picker';
 import { fetchIntervelSelector } from 'src/modules/app/selectors';
 
 const SettingsPageComponent = (): JSX.Element => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation()
   const dispatch = useDispatch();
   const theme = useTheme()
   const fetchIntervel = useSelector(fetchIntervelSelector)
@@ -54,8 +54,16 @@ const SettingsPageComponent = (): JSX.Element => {
         );
       })}
       <Button
-        title={`${t('refresh in')} ${fetchIntervel.title}`}
+        title={`${t('refresh in')} ${t(fetchIntervel.title)}`}
         onPress={() => { setShowPicker(!showPicker) }}
+      />
+      <Button
+        title={t(i18n.language)}
+        onPress={() => {
+          i18n.language === 'he'
+            ? i18n.changeLanguage("en")
+            : i18n.changeLanguage("he")
+        }}
       />
       {showPicker &&
         <PickerContainer>
