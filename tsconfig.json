@@ -15,7 +15,7 @@
     "paths": {
       "src/*": ["src/*"]
     },
-    "types": ["jest", "styled-components-react-native"],
+    "types": ["jest", "styled-components-react-native","node"],
     "plugins": [
       {
         "name": "typescript-styled-plugin",

@@ -16,7 +16,6 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		8ED781BA286FA814001428CF /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED781B9286FA814001428CF /* BootSplash.storyboard */; };
 		CE5F24C429A4E94700B53721 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE5F24C329A4E94600B53721 /* GoogleService-Info.plist */; };
-		CE5F24C729A4EA3A00B53721 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CE5F24C629A4EA3A00B53721 /* FirebaseAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5F24C729A4EA3A00B53721 /* FirebaseAnalytics in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-GoogleSheetsAPI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +238,6 @@
 			);
 			name = GoogleSheetsAPI;
 			packageProductDependencies = (
-				CE5F24C629A4EA3A00B53721 /* FirebaseAnalytics */,
 			);
 			productName = GoogleSheetsAPI;
 			productReference = 13B07F961A680F5B00A75B9A /* GoogleSheetsAPI.app */;
@@ -273,7 +270,6 @@
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			packageReferences = (
-				CE5F24C529A4EA3A00B53721 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
@@ -760,25 +756,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		CE5F24C529A4EA3A00B53721 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		CE5F24C629A4EA3A00B53721 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CE5F24C529A4EA3A00B53721 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
 }
